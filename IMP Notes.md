@@ -1,4 +1,8 @@
 Detailed Report on Setting Up a Cybersecurity Environment with VirtualBox, Ubuntu Server, Docker, TheHive5, MISP, Cortex, Cassandra, Elasticsearch, and Wazuh
+
+Refer to youtube playlist if you are stuck somewhere, and you are going to be stuck infinitly.
+https://youtu.be/XPC4lSXDfY4?si=3wVdu_L0jYJ5oo5t
+
 1. Install VirtualBox
 Step-by-Step Instructions:
 Download VirtualBox: Go to the VirtualBox website and download the appropriate version for your operating system.
