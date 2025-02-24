@@ -1,3 +1,54 @@
-The implementation of a SOC automation project within a home lab environment. The project utilizes three key components: Wazuh, Shuffle, and TheHive, each serving distinct roles in the automation workflow.
-Wazuh, an open-source security monitoring platform, is deployed as the primary agent for collecting and forwarding security-related events to the central management server, the Wazuh Manager. Shuffle acts as an intermediary, enriching alerts received from the Wazuh Manager with additional context before forwarding them to TheHive. Finally, TheHive serves as the incident response and case management tool, facilitating collaboration among SOC analysts and orchestrating response actions based on enriched alerts.
-The home lab environment consists of a Windows PC hosting the Wazuh Agent, a cloud-based server housing the Wazuh Manager, Shuffle, and TheHive instances, and a network infrastructure to facilitate communication between these components.
+# SOC Home Automation Project
+
+## Overview
+
+The implementation of a SOC (Security Operations Center) automation project within a home lab environment represents a significant step towards understanding and enhancing cybersecurity practices. This project leverages three key components—**Wazuh**, **Shuffle**, and **TheHive**—each playing a distinct and crucial role in the automation workflow. Together, these tools form a cohesive system that enhances security monitoring, alert enrichment, and incident response capabilities.
+
+## Key Components
+
+### Wazuh
+
+**Wazuh** is an open-source security monitoring platform designed to provide comprehensive threat detection and incident response capabilities. Deployed as the primary agent for collecting and forwarding security-related events, Wazuh acts as the first line of defense in identifying potential threats. The Wazuh Agent, installed on the Windows PC, continuously monitors system logs, network traffic, and other security-relevant data, and forwards this information to the central management server, the **Wazuh Manager**. This centralized approach ensures that all security events are collected and processed in a unified manner, facilitating efficient threat detection and response.
+
+### Shuffle
+
+**Shuffle** serves as an intermediary in the automation workflow, enriching alerts received from the **Wazuh Manager** with additional context before forwarding them to **TheHive**. This enrichment process is crucial, as it adds valuable information to the alerts, making them more actionable for SOC analysts. Shuffle can integrate with various external data sources and APIs to gather relevant context, such as threat intelligence feeds, IP reputation databases, and more. By enriching the alerts, Shuffle ensures that SOC analysts receive comprehensive and actionable information, enabling them to make informed decisions and respond to incidents more effectively.
+
+### TheHive
+
+**TheHive** is a powerful incident response and case management tool that facilitates collaboration among SOC analysts and orchestrates response actions based on enriched alerts. TheHive provides a centralized platform for managing incidents, tracking progress, and coordinating response efforts. Analysts can create and manage cases, assign tasks, and document their findings within TheHive, ensuring that all relevant information is easily accessible and organized. TheHive also supports integration with other tools and platforms, allowing for seamless automation of response actions and ensuring that the SOC team can respond to incidents in a timely and coordinated manner.
+
+## Home Lab Environment
+
+The home lab environment for this project consists of the following components:
+
+### Windows PC
+
+- **Wazuh Agent**: Installed on the Windows PC, the Wazuh Agent collects security-related events and forwards them to the Wazuh Manager. This includes monitoring system logs, network traffic, and other relevant data sources.
+
+### Cloud-based Server
+
+- **Wazuh Manager**: The central management server that processes events collected by the Wazuh Agent. It generates alerts based on predefined rules and forwards them to Shuffle for enrichment.
+- **Shuffle**: Acts as an intermediary, enriching alerts with additional context from various data sources before forwarding them to TheHive.
+- **TheHive**: Serves as the incident response and case management tool, facilitating collaboration among SOC analysts and orchestrating response actions based on enriched alerts.
+
+### Network Infrastructure
+
+- **Communication**: The network infrastructure ensures seamless communication between the Windows PC hosting the Wazuh Agent and the cloud-based server housing the Wazuh Manager, Shuffle, and TheHive instances. This includes setting up secure VPN connections, configuring firewalls, and ensuring proper network segmentation to protect sensitive data.
+
+## Workflow
+
+1. **Event Collection**: The Wazuh Agent deployed on the Windows PC collects security-related events and forwards them to the Wazuh Manager.
+2. **Alert Generation**: The Wazuh Manager processes the collected events and generates alerts based on predefined rules and threat detection mechanisms.
+3. **Alert Enrichment**: The alerts generated by the Wazuh Manager are forwarded to Shuffle, which enriches them with additional context from various data sources.
+4. **Incident Management**: The enriched alerts are sent to TheHive, where SOC analysts can manage incidents, collaborate, and orchestrate response actions. TheHive provides a centralized platform for tracking progress, documenting findings, and ensuring efficient incident resolution.
+
+## Conclusion
+
+By integrating Wazuh, Shuffle, and TheHive within a home lab environment, this project demonstrates a robust SOC automation workflow. It showcases how these tools can work together to enhance security monitoring, alert enrichment, and incident response capabilities. This setup provides a comprehensive and automated SOC environment, suitable for both educational purposes and practical applications.
+
+---
+
+This project not only enhances the understanding of cybersecurity automation but also provides a practical framework for setting up a functional SOC environment. By leveraging open-source tools and a well-structured workflow, this project aims to empower cybersecurity enthusiasts and professionals to build and maintain a secure and efficient SOC.
+
+**Shreyash Wandre**
